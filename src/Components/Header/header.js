@@ -1,24 +1,25 @@
 import React from 'react';
 import pilogo from '../../siteContent/ChapterLogo.png'
+import { HeaderA, HeaderDiv, HeaderImg, HeaderLeftDiv, HeaderLi, HeaderRightDiv, HeaderTitle, HeaderUl } from './HeaderStyle';
 
 const Header = () => {
 
     return (
-        <div>
-            <div class="leftHeader">
-                <img src={pilogo}></img>
-                <div>
-                    Pi Chpater | Phi Iota Alpha Fraternity, Inc.
-                </div>
-            </div>
-            <div class="rightHeader">
-                <ul>
-                    <li>Join</li>
-                    <li>About Us</li>
-                    <li>Brothers</li>
-                </ul>
-            </div>
-        </div>
+        <HeaderDiv class="siteHeader">
+            <HeaderLeftDiv>
+                <HeaderImg src={pilogo}></HeaderImg>
+                <HeaderTitle>
+                    Pi Chapter | Phi Iota Alpha Fraternity, Inc.
+                </HeaderTitle>
+            </HeaderLeftDiv>
+            <HeaderRightDiv>
+                <HeaderUl>
+                    <HeaderLi><HeaderA>Join</HeaderA></HeaderLi>
+                    <HeaderLi><HeaderA>About Us</HeaderA></HeaderLi>
+                    <HeaderLi><HeaderA>Brothers</HeaderA></HeaderLi>
+                </HeaderUl>
+            </HeaderRightDiv>
+        </HeaderDiv>
     );
 };
 

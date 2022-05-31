@@ -3,9 +3,12 @@ import styled from "@emotion/styled";
 /* Header Style */
 
 export const HeaderDiv = styled.div`
-    background: #002855;
+    background: #FFFFFF;
     display: flex;
     height: 125px;
+    color: #002855;
+    font-size: 24px;
+    font-weight: bold;
 `;
 
 export const HeaderImg = styled.img`
@@ -20,7 +23,9 @@ export const HeaderLeftDiv = styled.div`
 
 export const HeaderTitle = styled.div`
     margin: auto 0px auto 20px;
-    font-size: 24px;
+    &:hover {
+        cursor: default;
+      }
 `;
 
 export const HeaderRightDiv = styled.div`
@@ -40,5 +45,8 @@ export const HeaderA = styled.a`
     display: block;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    &:hover {
+        color: #990C22;
+        cursor: pointer;
+      }
 `;

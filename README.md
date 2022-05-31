@@ -17,3 +17,16 @@ These are the initial wireframes for a 1080p web broswer
 ![PC 1080 wireframe](/public/wireframe/About%20Us%20-%20Who%20We%20Are.png)
 
 ![PC 1080 wireframe](/public/wireframe/Join.png)
+
+## Dependencies
+
+* npx create-react-app
+* npm install redux react-redux @reduxjs/toolkit
+* npm install react-router-dom
+* npm install --save @emotion/styled
+
+## Features
+
+## Author
+
+Rony Colón

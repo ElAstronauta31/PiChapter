@@ -1,11 +1,12 @@
 import React from 'react';
+import pilogo from '../../siteContent/ChapterLogo.png'
 
 const Header = () => {
 
     return (
         <div>
             <div class="leftHeader">
-                <img></img>
+                <img src={pilogo}></img>
                 <div>
                     Pi Chpater | Phi Iota Alpha Fraternity, Inc.
                 </div>

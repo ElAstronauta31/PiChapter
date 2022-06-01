@@ -14,9 +14,15 @@ const Header = () => {
             </HeaderLeftDiv>
             <HeaderRightDiv>
                 <HeaderUl>
-                    <HeaderLi><HeaderA>Join</HeaderA></HeaderLi>
-                    <HeaderLi><HeaderA>About Us</HeaderA></HeaderLi>
-                    <HeaderLi><HeaderA>Brothers</HeaderA></HeaderLi>
+                    <HeaderLi>
+                        <HeaderA>Join</HeaderA>
+                    </HeaderLi>
+                    <HeaderLi>
+                        <HeaderA>About Us</HeaderA>
+                    </HeaderLi>
+                    <HeaderLi>
+                        <HeaderA>Brothers</HeaderA>
+                    </HeaderLi>
                 </HeaderUl>
             </HeaderRightDiv>
         </HeaderDiv>

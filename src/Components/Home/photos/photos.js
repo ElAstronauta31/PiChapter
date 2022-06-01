@@ -1,10 +1,11 @@
 import React from 'react';
+import { Holder } from './photosStyle';
 
 const Photos = () => {
     return (
-        <div>
+        <Holder>
             
-        </div>
+        </Holder>
     );
 };
 

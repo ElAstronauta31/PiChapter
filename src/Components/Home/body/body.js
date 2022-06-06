@@ -1,19 +1,19 @@
 import React from 'react';
-import { BodyDiv, MissionDiv, QuoteDiv, MissionP, QuoteH3, TitleDiv, TitleH2, Hold } from './bodyStyle';
+import { BodyDiv, MissionDiv, QuoteDiv, MissionP, Hold2, QuoteP, QuoteH3, TitleDiv, TitleH2, Hold } from './bodyStyle';
 
 const Body = () => {
     return (
         <BodyDiv>
-            <div>
+            <Hold2>
                 <TitleDiv>
                     <TitleH2>
-                        Mission
+                        Our Mission
                     </TitleH2>
                     <TitleH2>
                         Quote of the day
                     </TitleH2>
                 </TitleDiv>
-            </div>
+            </Hold2>
             <Hold>
                 <MissionDiv>
                     <MissionP>
@@ -24,11 +24,11 @@ const Body = () => {
                     </MissionP>
                 </MissionDiv>
                 <QuoteDiv>
-                    <MissionP>
+                    <QuoteP>
                         We are free, but not to be evil, not to be indifferent to human suffering, not to profit 
                         from the people, from the work created and sustained through their spirit of political 
                         association, while refusing to contribute to the political state that we profit from.
-                    </MissionP>
+                    </QuoteP>
                     <QuoteH3>
                         - Don José Martí
                     </QuoteH3>

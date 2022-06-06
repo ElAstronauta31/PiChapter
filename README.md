@@ -29,4 +29,4 @@ These are the initial wireframes for a 1080p web broswer
 
 ## Author
 
-Rony Colón
+Rony Obet Colón

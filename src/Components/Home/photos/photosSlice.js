@@ -6,3 +6,5 @@ const photosSlice = createSlice({
         images: []
     }
 })
+
+export default photosSlice

@@ -1,28 +1,29 @@
 import React from 'react';
 import pilogo from '../../siteContent/ChapterLogo.png'
 import { HeaderA, HeaderDiv, HeaderImg, HeaderLeftDiv, HeaderLi, HeaderRightDiv, HeaderTitle, HeaderUl } from './HeaderStyle';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
     return (
         <HeaderDiv class="siteHeader">
             <HeaderLeftDiv>
-                <HeaderImg src={pilogo}></HeaderImg>
+                <Link to="/">
+                    <HeaderImg src={pilogo}></HeaderImg>
+                </Link>
                 <HeaderTitle>
                     Pi Chapter | Phi Iota Alpha Fraternity, Inc.
                 </HeaderTitle>
             </HeaderLeftDiv>
             <HeaderRightDiv>
                 <HeaderUl>
-                    <HeaderLi>
-                        <HeaderA>Join</HeaderA>
-                    </HeaderLi>
-                    <HeaderLi>
-                        <HeaderA>About Us</HeaderA>
-                    </HeaderLi>
-                    <HeaderLi>
-                        <HeaderA>Brothers</HeaderA>
-                    </HeaderLi>
+                    <Link to="/join">
+                        <HeaderLi>Join</HeaderLi>
+                    </Link>
+                    <Link to="/about">
+                        <HeaderLi>About Us</HeaderLi>
+                    </Link>
+                        <HeaderLi>Brothers</HeaderLi>
                 </HeaderUl>
             </HeaderRightDiv>
         </HeaderDiv>

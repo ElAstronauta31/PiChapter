@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <HeaderDiv class="siteHeader">
             <HeaderLeftDiv>
-                <Link to="/">
+                <Link to="/" style={{textDecoration: 'none'}}>
                     <HeaderImg src={pilogo}></HeaderImg>
                 </Link>
                 <HeaderTitle>

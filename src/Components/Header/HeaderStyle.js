@@ -39,9 +39,6 @@ export const HeaderUl = styled.ul`
 
 export const HeaderLi = styled.li`
     float: left;
-`;
-
-export const HeaderA = styled.a`
     display: block;
     padding: 20px;
     text-align: center;
@@ -49,4 +46,8 @@ export const HeaderA = styled.a`
         color: #990C22;
         cursor: pointer;
       }
+`;
+
+export const HeaderA = styled.a`
+    
 `;

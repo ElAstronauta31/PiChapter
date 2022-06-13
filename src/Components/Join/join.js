@@ -1,72 +1,89 @@
 import React from "react";
-import { FormDiv, InfoDiv, JoinDiv } from "./joinStyle";
+import { FormDiv, InfoDiv, JoinDiv, InfoInnerDiv, NameDiv, InfoP, TitleDiv, BottomDiv, InformationDiv, SelectDiv, InnerNameDiv,NameInput, EmailInput, InfoH2, InfoUl, FormLabel, EmailDiv, CommentDiv, TextArea, SelectLabel, SelectOptionDiv, SubmitDiv, SubmitInput, SelectA, InterestDiv, FormStyle } from "./joinStyle";
 
 const Join = () => {
 
     return (
         <JoinDiv>
-            <div>
-                <div>
-                
-                </div>
-                <div>
-
-                </div>
-            </div>
+            <TitleDiv>
+                <InterestDiv>
+                    <h1>Interest Form</h1>
+                </InterestDiv>
+                <InformationDiv>
+                    <h1>Membership Information</h1>
+                </InformationDiv>
+            </TitleDiv>
+            <BottomDiv>
             <FormDiv>
-                <form>
-                    <div>
-                        <div>
-                            <label for="fname">First Name</label><br/>
-                            <input type="text" id="fname"></input><br/>
-                        </div>
-                        <div>
-                            <label for="lname">Last Name</label><br/>
-                            <input type="text" id="lname"></input><br/>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="email">Email</label><br/>
-                        <input type="text" id="email"></input><br/>
-                    </div>
-                    <div>
-                        <label for="edu">Education</label><br/>
-                        <select id="edu">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-
-                        <label for="col">College/University</label><br/>
-                        <select id="coll">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-
-                        <label for="gpa">GPA</label><br/>
-                        <select id="gpa">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="comment">Additional Comments</label><br/>
-                        <textarea rows="5"  cols="50" id="fname" defaultValue="Comment Here"></textarea><br/>
-                    </div>
-                    <div>
-                        <input type="button"  value="Submit" />
-                    </div>
-                </form>
+                <FormStyle>
+                    <NameDiv>
+                        <InnerNameDiv>
+                            <FormLabel for="fname">First Name</FormLabel><br/>
+                            <NameInput type="text" id="fname"></NameInput><br/>
+                        </InnerNameDiv>
+                        <InnerNameDiv>
+                            <FormLabel for="lname">Last Name</FormLabel><br/>
+                            <NameInput type="text" id="lname"></NameInput><br/>
+                        </InnerNameDiv>
+                    </NameDiv>
+                    <EmailDiv>
+                        <FormLabel for="email">Email</FormLabel><br/>
+                        <EmailInput type="text" id="email"></EmailInput><br/>
+                    </EmailDiv>
+                    <SelectDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="edu">Education</SelectLabel><br/>
+                            <SelectA id="edu">
+                                <option selected disabled>Select</option>
+                                <option>Freshman</option>
+                                <option>Sophmore</option>
+                                <option>Junior</option>
+                                <option>Senior</option>
+                                <option>Graduate</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="col">College/University</SelectLabel><br/>
+                            <SelectA id="col">
+                                <option selected disabled>Select</option>
+                                <option>Rochester Institute of Technology</option>
+                                <option>University of Rochester</option>
+                                <option>Nazareth College</option>
+                                <option>St. John Fisher</option>
+                                <option>SUNY Geneseo</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="gpa">GPA</SelectLabel><br/>
+                            <SelectA id="gpa">
+                                <option selected disabled>Select</option>
+                                <option>Below 2.75</option>
+                                <option>Above 2.75</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                    </SelectDiv>
+                    <CommentDiv>
+                        <FormLabel>Additional Comments</FormLabel><br/>
+                        <TextArea rows="10"  cols="74" id="comment" maxLength="200"></TextArea><br/>
+                    </CommentDiv>
+                    <SubmitDiv>
+                        <SubmitInput type="button"  value="Submit" />
+                    </SubmitDiv>
+                </FormStyle>
             </FormDiv>
             <InfoDiv>
-                <div>
-                    <h2>Eligibility</h2>
-                    <p>
+                <InfoInnerDiv>
+                    <InfoH2>Eligibility</InfoH2>
+                    <InfoP>
                         Any male student enrolled in an accredited 
                         four year college or university may seek 
                         membership in a undergraduate entity provided
                         that he:
-                    </p>
-                    <ul>
+                    </InfoP>
+                    <InfoUl>
                         <li> 
                             Is in good academic standing with a cumulative grade point 
                             average of no less than 2.75 on a 4.0 grade point scale
@@ -79,14 +96,14 @@ const Join = () => {
                             Has successfully completed one semester or two quarters
                             of a regular year's program
                         </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>New Member Process</h2>
-                    <p>
+                    </InfoUl>
+                </InfoInnerDiv>
+                <InfoInnerDiv>
+                    <InfoH2>New Member Process</InfoH2>
+                    <InfoP>
                         Provided that all requirements stated above are met, the candidate will:
-                    </p>
-                    <ul>
+                    </InfoP>
+                    <InfoUl>
                         <li>
                             Submit a Membership Application consisting of both 
                             short and open-ended questions regarding a candidates 
@@ -102,16 +119,16 @@ const Join = () => {
                         <li>
                             Successfully complete an eight (8) week New Member Induction Process
                         </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Membership Responsibilities</h2>
-                    <p>
+                    </InfoUl>
+                </InfoInnerDiv>
+                <InfoInnerDiv>
+                    <InfoH2>Membership Responsibilities</InfoH2>
+                    <InfoP>
                         Once a candidate completes the eight (8) 
                         week New Member Induction Process they 
                         will be expected to: 
-                    </p>
-                    <ul>
+                    </InfoP>
+                    <InfoUl>
                         <li>
                             Pay $150 semester brother dues as an undergraduate member
                         </li>
@@ -121,9 +138,10 @@ const Join = () => {
                         <li>
                             Attend out bi-annual National Convention
                         </li>
-                    </ul>
-                </div>
+                    </InfoUl>
+                </InfoInnerDiv>
             </InfoDiv>
+            </BottomDiv>
         </JoinDiv>
     );
 };

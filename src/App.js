@@ -10,7 +10,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div >
         <Header/>
         <Routes>
           <Route path="/" exact element={<Home/>} />

@@ -35,6 +35,7 @@ export const HeaderRightDiv = styled.div`
 
 export const HeaderUl = styled.ul`
     list-style-type: none;
+    
 `;
 
 export const HeaderLi = styled.li`
@@ -42,6 +43,9 @@ export const HeaderLi = styled.li`
     display: block;
     padding: 20px;
     text-align: center;
+    &:visited {
+        text-decoration: none;
+    }
     &:hover {
         color: #990C22;
         cursor: pointer;

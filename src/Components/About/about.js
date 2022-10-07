@@ -37,7 +37,7 @@ const About = () => {
                             <Astyle onClick={() => dispatch(setActive('contactus'))}>
                                 <AboutLi>Contact Us</AboutLi>
                             </Astyle>
-                            <Astyle href="https://www.phiota.org" target="_blank">
+                            <Astyle href="https://www.phiota.org" target="_blank" rel="noreferrer noopener" >
                                 <AboutLi>National Page</AboutLi>
                             </Astyle>
                         </AboutUl> 

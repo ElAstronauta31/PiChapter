@@ -17,22 +17,24 @@ function App() {
 
   return (
     <Router>
-      <div >
-        <Header/>
-        {
-          shortpath.includes("/about/") ? <About/> :  null
-            
-        }
-        <Routes>
-          <Route path="/" exact element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/join" element={<Join/>} />
-          <Route path="/about/whoweare" element={<WWA/>}></Route>
-          <Route path="/about/chapterhistory" element={<ChapterHistory/>}></Route>
-          <Route path="/about/contactus" element={<ContactUs/>}></Route>
-          <Route path="/brothers" element= {<Brothers/>}></Route>
-        </Routes>
-      </div>
+        <div>
+          
+          <Header/>
+          {
+            shortpath.includes("/about/") ? <About/> :  null
+              
+          }
+          <Routes>
+            <Route path="/" exact element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/join" element={<Join/>} />
+            <Route path="/about/whoweare" element={<WWA/>}></Route>
+            <Route path="/about/chapterhistory" element={<ChapterHistory/>}></Route>
+            <Route path="/about/contactus" element={<ContactUs/>}></Route>
+            <Route path="/brothers" element= {<Brothers/>}></Route>
+          </Routes>
+        </div>
+        
     </Router>
   );
 }

@@ -3,11 +3,13 @@ import styled from "@emotion/styled";
 export const Holder= styled.div`
     display: flex;
     justify-content: center;
-    max-width: 1483px;
-    height: 450px;
-    margin: 50px auto 25px auto;
-    padding: 0px 20px;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+    flex-flow: row nowrap
 `;
+
+
 
 export const Image1 = styled.img`
     width: 800px;
@@ -36,6 +38,30 @@ export const ImgDiv= styled.div`
     
 `;
 
+export const ArrowImg = styled.img`
+    &:hover {
+        cursor: pointer;
+    }
+`;
+
 export const MainImgDiv= styled.div`
     position: absolute;
 `;
+
+export const ArrowLeftImgDiv = styled.div`
+    width: 100px;
+    margin: auto 0px;
+    padding-left: 50px;
+    z-index: 11;
+`
+export const ArrowRightImgDiv = styled.div`
+    width: 100px;
+    margin: auto 0px;
+    padding-right: 50px;
+    z-index: 11;
+`
+export const SlideshowDiv = styled.div`
+    width: 808px;
+    height: 450px;
+    padding-top: 25px;
+`

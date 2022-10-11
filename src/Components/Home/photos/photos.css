@@ -1,0 +1,40 @@
+.currentImg {
+    width: 800px;
+    height: 450px;
+    border: 4px solid #FFFFFF;
+}
+
+.nextImg {
+    width: 800px;
+    height: 450px;
+    transform: translateX(-63%);
+    scale: 0.8;
+    border: 4px solid #FFFFFF;
+}
+
+.prevImg {
+    width: 800px;
+    height: 450px;
+    transform: translateX(63%);
+    scale: 0.80;
+    border: 4px solid #FFFFFF;
+}
+
+.slide {
+    display: none;
+}
+
+.activeSlide {
+    position: absolute;
+    z-index: 10;
+}
+
+.nextSlide {
+    position: absolute;
+    opacity: .5;
+}
+
+.prevSlide {
+    position: absolute;
+    opacity: .5;
+}

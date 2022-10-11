@@ -5,7 +5,7 @@ export const MenuDiv = styled.div`
     height: 225px;
     position: absolute;
     right: 0%;
-    z-index: 10;
+    z-index: 11;
     background: #FFFFFF;
     border: 2px solid #990C22;
     display: none;
@@ -22,6 +22,9 @@ export const MenuLi = styled.li`
     margin: 20px 0px;
     font-size: 24px;
     text-align: left;
+    &:hover {
+        color: #990C22;
+      }
     &:visited {
         text-decoration: none;
     }

@@ -7,7 +7,7 @@ export const HeaderDiv = styled.div`
     position: relative;
     display: flex;
     width: 100%;
-    height: 125px;
+    height: 100px;
     color: #002855;
     font-size: 24px;
     @media (max-width: 768px) {
@@ -19,18 +19,20 @@ export const HeaderImg = styled.img`
     width: 85px;
     height: 74.5px;
     @media (max-width: 768px) {
-        width: 60px;
-        height: 52.59px;
+        
     }
 `;
 
 export const MenuImg = styled.img`
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    margin: auto 20px;
     @media (min-width: 769px) {
         display: none;
     }
+    &:hover {
+        cursor: pointer;
+      }
 `;
 
 export const HeaderLeftDiv = styled.div`
@@ -60,7 +62,8 @@ export const HeaderTitleShort = styled.div`
 
 export const HeaderRightDiv = styled.div`
     display: flex;
-    margin: auto 0px auto auto;
+    height: 100px;
+    margin: 0px 0px auto auto;
 `;
 
 export const HeaderUl = styled.ul`
@@ -73,7 +76,7 @@ export const HeaderUl = styled.ul`
 export const HeaderLi = styled.li`
     float: left;
     display: block;
-    padding: 20px;
+    padding: 13px 20px;
     text-align: center;
     &:visited {
         text-decoration: none;

@@ -10,19 +10,41 @@ import Menu from './menu';
 import { HeaderMenuDiv, MenuHolder } from './MenuStyle';
 
 const Header = () => {
-
-    const dispatch = useDispatch();
      
     const onClick = () => {
         var displayStatus = document.getElementById("menu").style.display;
-        if (displayStatus === "none") {
+        if ( !displayStatus || displayStatus == "none") {
             document.getElementById("menu").style.display = "block";
         } else {
             document.getElementById("menu").style.display = "none";
         }
     };
+    
+    //For if menu is displayed but logo is click to go home.
+    const onClickHome = () => {
+        var displayStatus = document.getElementById("menu").style.display;
+        if ( !displayStatus || displayStatus == "block") {
+            document.getElementById("menu").style.display = "none";
+        } else {
+            return
+        }
+    };
 
-    // look into loading - first click does not work after that second click works
+    useEffect(() => {
+        const handleScroll = event => {
+            var displayStatus = document.getElementById("menu").style.display;
+            if (displayStatus == "block" ) {
+                return document.getElementById("menu").style.display = "none";
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // when loading in display = "" before having value of none so have to account for that in IF statement. 
 
 
 
@@ -31,7 +53,7 @@ const Header = () => {
             <HeaderDiv>
                 <HeaderLeftDiv>
                     <Link to="/" style={{ textDecoration: 'none', color: "#002855" }}>
-                        <HeaderImg src={FIACrest}></HeaderImg>
+                        <HeaderImg onClick={onClickHome} src={FIACrest}></HeaderImg>
                     </Link>
                     <HeaderTitle>
                         Pi Chapter | Phi Iota Alpha Fraternity, Inc.
@@ -52,7 +74,7 @@ const Header = () => {
                             <HeaderLi>Brothers</HeaderLi>
                         </Link>
                     </HeaderUl>
-                    <MenuImg onClick={() => dispatch(onClick)} src={HamburgerMenu}></MenuImg>
+                    <MenuImg className='menuImg' onClick={onClick} src={HamburgerMenu}></MenuImg>
                 </HeaderRightDiv>
             </HeaderDiv>
             <MenuHolder>

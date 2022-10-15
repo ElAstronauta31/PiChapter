@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { MenuDiv, MenuListDiv, MenuUl, MenuLi } from "./MenuStyle";
 
@@ -6,16 +6,33 @@ const Menu = () => {
 
     const onClick = () => {
         var displayStatus = document.getElementById("menu").style.display;
-        if ( !displayStatus || displayStatus == "none") {
+        
+        if ( !displayStatus || displayStatus === "none") {
             document.getElementById("menu").style.display = "block";
         } else {
             document.getElementById("menu").style.display = "none";
         }
     };
 
+    useEffect(() => {
+        const handleImg = event => {
+            var displayStatus = document.getElementById("menuImg").style.display;
+            if (!displayStatus || displayStatus === "none" ) {
+                document.getElementById("menu").style.display = "none";
+            }
+        }
+        window.addEventListener('resize', handleImg);
+
+        return () => {
+            window.removeEventListener('resize', handleImg);
+        };
+    }, []);
+
+
+
     return (
         <div>
-            <MenuDiv id="menu">
+                <MenuDiv id="menu">
                 <MenuListDiv>
                     <MenuUl>
                         <Link to="/" style={{ textDecoration: 'none', color: '#002855' }}>
@@ -32,8 +49,7 @@ const Menu = () => {
                         </Link>
                     </MenuUl>
                 </MenuListDiv>
-            </MenuDiv>
-            
+                </MenuDiv>
         </div>
         
     );

@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
-import { useState } from 'react';
-import { useDispatch } from "react-redux";
 import HamburgerMenu from '../../siteContent/HamburgerMenu.png'
 import FIACrest from '../../siteContent/FIACrest.png'
-import { HeaderA, HeaderDiv, HeaderImg, HeaderLeftDiv, HeaderLi, HeaderRightDiv, HeaderTitle, HeaderTitleShort, HeaderUl, MenuImg } from './HeaderStyle';
+import { HeaderDiv, HeaderImg, HeaderLeftDiv, HeaderLi, HeaderRightDiv, HeaderTitle, HeaderTitleShort, HeaderUl, MenuImg } from './HeaderStyle';
 import { Link } from 'react-router-dom';
-import { StyledLink } from '../Brothers/BrothersStyle';
 import Menu from './menu';
 import { HeaderMenuDiv, MenuHolder } from './MenuStyle';
 
 const Header = () => {
+
+    
      
     const onClick = () => {
         var displayStatus = document.getElementById("menu").style.display;
-        if ( !displayStatus || displayStatus == "none") {
+        if ( !displayStatus || displayStatus === "none") {
             document.getElementById("menu").style.display = "block";
         } else {
             document.getElementById("menu").style.display = "none";
@@ -23,7 +22,7 @@ const Header = () => {
     //For if menu is displayed but logo is click to go home.
     const onClickHome = () => {
         var displayStatus = document.getElementById("menu").style.display;
-        if ( !displayStatus || displayStatus == "block") {
+        if ( !displayStatus || displayStatus === "block") {
             document.getElementById("menu").style.display = "none";
         } else {
             return
@@ -33,7 +32,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = event => {
             var displayStatus = document.getElementById("menu").style.display;
-            if (displayStatus == "block" ) {
+            if (displayStatus === "block" ) {
                 return document.getElementById("menu").style.display = "none";
             }
         }
@@ -74,11 +73,14 @@ const Header = () => {
                             <HeaderLi>Brothers</HeaderLi>
                         </Link>
                     </HeaderUl>
-                    <MenuImg className='menuImg' onClick={onClick} src={HamburgerMenu}></MenuImg>
+                    <MenuImg id="menuImg" className='menuImg' onClick={onClick} src={HamburgerMenu}></MenuImg>
                 </HeaderRightDiv>
             </HeaderDiv>
             <MenuHolder>
-                <Menu />
+                {
+                    <Menu />
+                }
+                
             </MenuHolder>
             
         </HeaderMenuDiv>

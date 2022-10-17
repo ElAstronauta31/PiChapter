@@ -20,20 +20,14 @@ const Highlight = () => {
             <BroHighDiv>
                 Brother Highlight
             </BroHighDiv>
-            <BrotherNameDiv>
-                <NameDiv>
+            <BrothersDiv>
+                <BrotherNameDiv>
+                    <NameDiv>
                         <NameH2>
                             Don {brothers[brother1].brotherName} 
                         </NameH2>
-                </NameDiv>
-                <NameDiv>
-                        <NameH2>
-                            Don {brothers[brother2].brotherName}
-                        </NameH2>
-                </NameDiv>      
-            </BrotherNameDiv>
-            <BrothersDiv>
-                <Brother1Div>
+                    </NameDiv>
+                    <Brother1Div>
                         <ImgDiv>
                             <BroImg src={piLion}></BroImg>
                         </ImgDiv>
@@ -47,8 +41,15 @@ const Highlight = () => {
                             }
                             <BroH2>{brothers[brother1].firstName} {brothers[brother1].lastName}</BroH2>
                         </BroInfoDiv>
-                </Brother1Div>
-                <Brother1Div>
+                    </Brother1Div>
+                </BrotherNameDiv>
+                <BrotherNameDiv>
+                    <NameDiv>
+                        <NameH2>
+                            Don {brothers[brother2].brotherName}
+                        </NameH2>
+                    </NameDiv>
+                    <Brother1Div>
                         <ImgDiv>
                             <BroImg src={piLion}></BroImg>
                         </ImgDiv>
@@ -64,7 +65,9 @@ const Highlight = () => {
                         </BroInfoDiv>
                         
                         
-                </Brother1Div>
+                    </Brother1Div>
+                </BrotherNameDiv>
+                
             </BrothersDiv>
         </HighlightDiv>
     );

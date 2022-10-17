@@ -2,41 +2,20 @@ import styled from "@emotion/styled";
 
 export const Holder= styled.div`
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 450px;
+    padding-top: 25px;
     justify-content: space-between;
-    flex-flow: row nowrap
+    flex-flow: row nowrap;
+    @media (max-width: 1200px) {
+        position: relative;
+        justify-content: center;
+        max-width: 100%;
+        padding-top: 0px;
+        height: 400px;
+    }
 `;
 
-
-
-export const Image1 = styled.img`
-    width: 800px;
-    height: 450px;
-    transform: translateX(-63%);
-    scale: 0.8;
-    border: 4px solid #FFFFFF;
-`
-
-export const Image2 = styled.img`
-    width: 800px;
-    height: 450px;
-    border: 4px solid #FFFFFF;
-`
-export const Image3 = styled.img`
-    width: 800px;
-    height: 450px;
-    transform: translateX(63%);
-    scale: 0.80;
-    border: 4px solid #FFFFFF;
-`
-
-export const ImgDiv= styled.div`
-    position: absolute;
-    opacity: .5;
-    
-`;
 
 export const ArrowImg = styled.img`
     &:hover {
@@ -49,19 +28,34 @@ export const MainImgDiv= styled.div`
 `;
 
 export const ArrowLeftImgDiv = styled.div`
-    width: 100px;
+    width: 85px;
+    height: 85px;
     margin: auto 0px;
     padding-left: 50px;
     z-index: 11;
+    @media (max-width: 1200px) {
+        
+        padding-left: 0px;
+    }
 `
 export const ArrowRightImgDiv = styled.div`
-    width: 100px;
+    width: 85px;
+    height: 85px;
     margin: auto 0px;
     padding-right: 50px;
     z-index: 11;
+    @media (max-width: 1200px) {
+        margin-left: auto;
+        padding-right: 0px;
+        
+    }
 `
 export const SlideshowDiv = styled.div`
-    width: 808px;
+    width: 800px;
     height: 450px;
-    padding-top: 25px;
+    @media (max-width: 1200px) {
+        position: absolute;
+        max-width: 100%;
+        min-height: 400px;
+    }
 `

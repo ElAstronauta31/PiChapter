@@ -1,8 +1,8 @@
 import Anniversary from '../../../siteContent/slideshow/Anniversary.jpeg';
 import P19 from '../../../siteContent/slideshow/P19.jpg';
 import PIAs297 from '../../../siteContent/slideshow/PIAs297.jpg'; 
-import ArielPro from '../../../siteContent/slideshow/arielpro.jpeg';
-import JoshuaPro from '../../../siteContent/slideshow/joshuapro.jpeg';
+import ArielPro from '../../../siteContent/slideshow/arielpro.jpg';
+import JoshuaPro from '../../../siteContent/slideshow/joshuapro.jpg';
 import InLineShow from '../../../siteContent/slideshow/inlineshow.jpeg';
 
 export const PhotosData = [

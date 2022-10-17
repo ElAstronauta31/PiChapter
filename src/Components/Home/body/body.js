@@ -5,18 +5,11 @@ import Quotes from './quotes';
 const Body = () => {
     return (
         <BodyDiv>
-            <Hold2>
-                <TitleDiv>
+            <Hold>
+                <MissionDiv>
                     <TitleH2>
                         Our Mission
                     </TitleH2>
-                    <TitleH2>
-                        Distinguished Quotes
-                    </TitleH2>
-                </TitleDiv>
-            </Hold2>
-            <Hold>
-                <MissionDiv>
                     <MissionP>
                         Phi Iota Alpha Fraternity is committed to the development of professional leaders through
                         shared experiences and fostered lifelong brotherhood. These men continuously promote the
@@ -25,6 +18,9 @@ const Body = () => {
                     </MissionP>
                 </MissionDiv>
                 <QuoteDiv>
+                    <TitleH2>
+                        Distinguished Quotes
+                    </TitleH2>
                     <Quotes />
                 </QuoteDiv>
             </Hold>

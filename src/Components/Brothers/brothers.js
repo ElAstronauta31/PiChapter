@@ -6,6 +6,7 @@ import { BroH1, BroH2, BroH2Div, BroImg, BroImgDiv, BrotherGridDiv, BrotherItemD
 export const Brothers = () => {
     const brothers = useSelector(state => state.brothers.brothers);
     const dispatch = useDispatch();
+    console.log(brothers.length);
     
     return (
 

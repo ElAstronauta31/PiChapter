@@ -8,11 +8,11 @@ const Highlight = () => {
     const brothers = useSelector(state => state.brothers.brothers);
     
     const random = () => {
-        return Math.floor(Math.random() * brothers.length + 1)
+        return Math.floor(Math.random() * brothers.length)
     }
-
+    
     const brother1 = random();
-    const brother2 = random();
+    const brother2 = random(); 
 
 
     return (

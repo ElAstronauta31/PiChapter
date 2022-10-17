@@ -9,13 +9,13 @@ export const BodyDiv = styled.div`
 `;
 
 export const MissionDiv = styled.div`
-    max-width: 819.5px;
+    width: 50%;
     border-color: #990C22;
 `;
 
 export const MissionP = styled.p`
     max-width: 735px;
-    padding-right: 35px;
+    
     margin: auto;
     font-size: 26px;
     text-align: center;
@@ -24,7 +24,7 @@ export const MissionP = styled.p`
 
 export const QuoteP = styled.p`
     max-width: 735px;
-    padding-left: 35px;
+    min-height: 100px;
     margin: auto;
     font-size: 26px;
     text-align: center;
@@ -32,7 +32,7 @@ export const QuoteP = styled.p`
 `;
 
 export const QuoteDiv = styled.div`
-    max-width: 819.5px;
+    width: 50%;
     border-color: #990C22;
 `;
 
@@ -60,7 +60,7 @@ export const TitleH2 = styled.h2`
 
 export const Hold = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 98vw;
     margin: 20px;
 `;

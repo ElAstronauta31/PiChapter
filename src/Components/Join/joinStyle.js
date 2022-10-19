@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 export const JoinDiv = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 40px 130px;
-    justify-content: space-between;
+    margin: auto;
+    justify-content: space-around;
     font-size: 24px;
+    
 `;
 
 export const FormDiv = styled.div`
@@ -15,6 +16,7 @@ export const FormDiv = styled.div`
     max-height: 550px;
     margin: auto;
     padding auto;
+    
 `;
 
 export const TitleDiv = styled.div`
@@ -27,12 +29,15 @@ export const InterestDiv = styled.div`
     flex-direction: column;
     text-align: center;
     margin: auto;
+    padding-top: 160px;
+    color: #FFFFFF;
 `;
 
 export const InformationDiv = styled.div`
     max-width: 700px;
     text-align: center;
     margin: auto;
+    color: #FFFFFF;
 `;
 
 export const FormStyle = styled.form`
@@ -41,14 +46,17 @@ export const FormStyle = styled.form`
 
 export const BottomDiv = styled.div`
     display: flex;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+     }
 `;
 
 export const InfoDiv = styled.div`
     display: inline-block;
     max-width: 700px;
     max-height: 550px;
-    margin: auto;
-    padding auto;
+    margin: auto auto auto 50px;
+    padding: auto;
     vertical-align: middle;
 `
 
@@ -80,7 +88,7 @@ export const InfoUl = styled.ul`
 export const NameDiv = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-top: 20px
+    margin-top: 20px;
 `;
 
 export const InnerNameDiv = styled.div`

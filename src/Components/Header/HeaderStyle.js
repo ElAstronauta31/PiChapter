@@ -27,7 +27,7 @@ export const MenuImg = styled.img`
     width: 50px;
     height: 50px;
     margin: auto 20px;
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         display: none;
     }
     &:hover {

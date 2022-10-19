@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutUsDiv, AboutUsUl, MissionDiv, MissionFactsDiv, PillarDiv, PillarImg, PillarsDiv, PillarsMainDiv, PillarRow, PillarColumn, DonH3, NameH3, FactsDiv, Lista, PillarH2 } from './AboutUsStyle';
+import { RedBorder, AboutUsDiv, AboutUsUl, MissionDiv, MissionFactsDiv, PillarDiv, PillarImg, PillarsDiv, PillarsMainDiv, PillarRow, PillarColumn, DonH3, NameH3, FactsDiv, Lista, PillarH2, MissionP } from './AboutUsStyle';
 import SimonBolivar from '../../siteContent/pillars/SimonBolivar.png';
 import JosedeSanMartin from '../../siteContent/pillars/JosedeSanMartin.png';
 import BenardoOHiggins from '../../siteContent/pillars/BenardoOHiggins.png';
@@ -15,14 +15,15 @@ const AboutUs = () => {
             <MissionFactsDiv>
                 <MissionDiv>
                     <h2>Our Mission</h2>
-                    <p>
+                    <MissionP>
                     Phi Iota Alpha Fraternity is committed to the development of 
                     professional leaders through shared experiences and fostered 
                     lifelong brotherhood. These men continuously promote the 
                     ideals of Pan Americanism via intellectual dialogue, cultural 
                     awareness, and community service. 
-                    </p>
+                    </MissionP>
                 </MissionDiv>
+                <RedBorder></RedBorder>
                 <FactsDiv>
                     <AboutUsUl>
                         <li><Lista>Name:</Lista> Phi Iota Alpha Fraternity, Inc</li>
@@ -38,6 +39,7 @@ const AboutUs = () => {
                     </AboutUsUl>
                 </FactsDiv>
             </MissionFactsDiv>
+            <RedBorder></RedBorder>
             <PillarsMainDiv>
                 <PillarH2>Our Fraternal Pillars</PillarH2>
                 <PillarsDiv>

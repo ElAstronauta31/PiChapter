@@ -11,6 +11,16 @@ export const BrotherGridDiv = styled.div`
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
+    @media (max-width: 1400px) {
+        grid-template-columns: 300px 300px 300px;
+    }
+    @media (max-width: 1020px) {
+        grid-template-columns: 300px 300px;
+    }
+    @media (max-width: 750px) {
+        grid-template-columns: 300px;
+    
+    }
 `
 
 export const BrotherItemDiv = styled.div`
@@ -18,6 +28,7 @@ export const BrotherItemDiv = styled.div`
     text-align: center;
     
     width: 300px;
+
 `
 
 export const BrothersDiv = styled.div`
@@ -35,15 +46,21 @@ export const BroH2 = styled.h2`
     font-size: 20px;
     margin: 0px;
     padding: 10px 0px;
+
 `
 
 export const BroH1 = styled.h1`
     font-size: 48px;
+    @media (max-width: 750px) {
+        font-size: 36px;
+    
+    }
 `
 
 export const BroImgDiv = styled.div`
     background: url(${v1}) ;
     border: 3px solid #BC9306;
+
 `
 
 export const BroH2Div = styled.div`

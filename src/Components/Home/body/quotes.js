@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { QuoteH3, QuoteP } from "./bodyStyle";
+import { QuoteDivCenter, QuoteH3, QuoteP } from "./bodyStyle";
 
 const Quotes = () => {
     const quotes = useSelector(state => state.quotes.quotes);
@@ -12,10 +12,10 @@ const Quotes = () => {
     const ranQuote = random();
 
     return (
-        <div>
+        <QuoteDivCenter>
             <QuoteP>{`"${quotes[ranQuote].quote}"`}</QuoteP>
             <QuoteH3>{`- Don ${quotes[ranQuote].author}`}</QuoteH3>
-        </div>
+        </QuoteDivCenter>
     );
 };
 

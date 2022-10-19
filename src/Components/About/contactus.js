@@ -14,9 +14,7 @@ const ContactUs = () => {
                 <ContactH1>Contact Us</ContactH1>
             </ContactDiv>
             <ContactInfo>
-                <ContactP>
-                    For Business inquires email us at email@phiota.com
-                </ContactP>
+                Reach out to us through any of our Social Medias!
             </ContactInfo>
             <ContactLinks>
                 <ContactUsUl>

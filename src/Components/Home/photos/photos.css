@@ -13,12 +13,24 @@
     
 }
 
+.prevImg {
+    width: 800px;
+    height: 400px;
+    transform: translateX(63%);
+    scale: 0.80;
+    border: 4px solid #FFFFFF;
+}
+
 @media (max-width: 1200px) {
     .nextImg {
-        display: none;
+        margin: 0px auto;
+        border: none;
+        max-width: 100%;
     }
     .prevImg {
-        display: none;
+        margin: 0px auto;
+        border: none;
+        max-width: 100%;
     }
     .currentImg {
         margin: 0px auto;
@@ -27,13 +39,16 @@
     }
 }
 
-.prevImg {
-    width: 800px;
-    height: 400px;
-    transform: translateX(63%);
-    scale: 0.80;
-    border: 4px solid #FFFFFF;
+@media (max-width: 768px) {
+    .nextImg {
+        display: none;
+    }
+    .prevImg {
+        display: none;
+    }
 }
+
+
 
 .slide {
     display: none;

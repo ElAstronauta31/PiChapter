@@ -7,6 +7,9 @@ export const HighlightDiv = styled.div`
     margin: 25px auto;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1200px) {
+        margin: 0px auto;
+    }
 `;
 
 export const Brother1Div = styled.div`

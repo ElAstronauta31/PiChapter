@@ -1,11 +1,12 @@
 import React from 'react';
-import { BodyDiv, MissionDiv, QuoteDiv, MissionP, Hold2, QuoteP, QuoteH3, TitleDiv, TitleH2, Hold } from './bodyStyle';
+import { BodyDiv, MissionDiv, QuoteDiv, MissionP, Hold2, QuoteP, QuoteH3, TitleDiv, TitleH2, Hold, RedBorder, RedBorderPC } from './bodyStyle';
 import Quotes from './quotes';
 
 const Body = () => {
     return (
         <BodyDiv>
             <Hold>
+                
                 <MissionDiv>
                     <TitleH2>
                         Our Mission
@@ -17,12 +18,15 @@ const Body = () => {
                         service.
                     </MissionP>
                 </MissionDiv>
+                <RedBorderPC></RedBorderPC>
+                <RedBorder></RedBorder>
                 <QuoteDiv>
                     <TitleH2>
                         Distinguished Quotes
                     </TitleH2>
                     <Quotes />
                 </QuoteDiv>
+                <RedBorder></RedBorder>
             </Hold>
         </BodyDiv>
     );

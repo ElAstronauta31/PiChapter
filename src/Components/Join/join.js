@@ -6,16 +6,15 @@ const Join = () => {
     return (
         <JoinDiv>
             <TitleDiv>
-                <InterestDiv>
-                    <h1>Interest Form</h1>
-                </InterestDiv>
-                <InformationDiv>
-                    <h1>Membership Information</h1>
-                </InformationDiv>
+                
+                
             </TitleDiv>
             <BottomDiv>
             <FormDiv>
                 <FormStyle>
+                    <InterestDiv>
+                        <h1>Interest Form</h1>
+                    </InterestDiv>
                     <NameDiv>
                         <InnerNameDiv>
                             <FormLabel for="fname">First Name</FormLabel><br/>
@@ -75,6 +74,9 @@ const Join = () => {
                 </FormStyle>
             </FormDiv>
             <InfoDiv>
+                <InformationDiv>
+                    <h1>Membership Information</h1>
+                </InformationDiv>
                 <InfoInnerDiv>
                     <InfoH2>Eligibility</InfoH2>
                     <InfoP>

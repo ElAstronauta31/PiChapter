@@ -14,7 +14,10 @@ const Highlight = () => {
     const brother1 = random();
     const brother2 = random(); 
 
-
+    if (brother1 === brother2) {
+        brother1 = random();
+    }
+   
     return (
         <HighlightDiv>
             <BroHighDiv>

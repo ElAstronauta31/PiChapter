@@ -10,69 +10,7 @@ const Join = () => {
                 
             </TitleDiv>
             <BottomDiv>
-            <FormDiv>
-                <FormStyle>
-                    <InterestDiv>
-                        <h1>Interest Form</h1>
-                    </InterestDiv>
-                    <NameDiv>
-                        <InnerNameDiv>
-                            <FormLabel for="fname">First Name</FormLabel><br/>
-                            <NameInput type="text" id="fname"></NameInput><br/>
-                        </InnerNameDiv>
-                        <InnerNameDiv>
-                            <FormLabel for="lname">Last Name</FormLabel><br/>
-                            <NameInput type="text" id="lname"></NameInput><br/>
-                        </InnerNameDiv>
-                    </NameDiv>
-                    <EmailDiv>
-                        <FormLabel for="email">Email</FormLabel><br/>
-                        <EmailInput type="text" id="email"></EmailInput><br/>
-                    </EmailDiv>
-                    <SelectDiv>
-                        <SelectOptionDiv>
-                            <SelectLabel for="edu">Education</SelectLabel><br/>
-                            <SelectA id="edu">
-                                <option selected disabled>Select</option>
-                                <option>Freshman</option>
-                                <option>Sophmore</option>
-                                <option>Junior</option>
-                                <option>Senior</option>
-                                <option>Graduate</option>
-                                <option>Other</option>
-                            </SelectA>
-                        </SelectOptionDiv>
-                        <SelectOptionDiv>
-                            <SelectLabel for="col">College/University</SelectLabel><br/>
-                            <SelectA id="col">
-                                <option selected disabled>Select</option>
-                                <option>Rochester Institute of Technology</option>
-                                <option>University of Rochester</option>
-                                <option>Nazareth College</option>
-                                <option>St. John Fisher</option>
-                                <option>SUNY Geneseo</option>
-                                <option>Other</option>
-                            </SelectA>
-                        </SelectOptionDiv>
-                        <SelectOptionDiv>
-                            <SelectLabel for="gpa">GPA</SelectLabel><br/>
-                            <SelectA id="gpa">
-                                <option selected disabled>Select</option>
-                                <option>Below 2.75</option>
-                                <option>Above 2.75</option>
-                                <option>Other</option>
-                            </SelectA>
-                        </SelectOptionDiv>
-                    </SelectDiv>
-                    <CommentDiv>
-                        <FormLabel>Additional Comments</FormLabel><br/>
-                        <TextArea rows="10"  cols="74" id="comment" maxLength="200"></TextArea><br/>
-                    </CommentDiv>
-                    <SubmitDiv>
-                        <SubmitInput type="button"  value="Submit" />
-                    </SubmitDiv>
-                </FormStyle>
-            </FormDiv>
+            
             <InfoDiv>
                 <InformationDiv>
                     <h1>Membership Information</h1>
@@ -143,6 +81,69 @@ const Join = () => {
                     </InfoUl>
                 </InfoInnerDiv>
             </InfoDiv>
+            <FormDiv>
+                <FormStyle>
+                    <InterestDiv>
+                        <h1>Interest Form</h1>
+                    </InterestDiv>
+                    <NameDiv>
+                        <InnerNameDiv>
+                            <FormLabel for="fname">First Name</FormLabel><br/>
+                            <NameInput type="text" id="fname"></NameInput><br/>
+                        </InnerNameDiv>
+                        <InnerNameDiv>
+                            <FormLabel for="lname">Last Name</FormLabel><br/>
+                            <NameInput type="text" id="lname"></NameInput><br/>
+                        </InnerNameDiv>
+                    </NameDiv>
+                    <EmailDiv>
+                        <FormLabel for="email">Email</FormLabel><br/>
+                        <EmailInput type="text" id="email"></EmailInput><br/>
+                    </EmailDiv>
+                    <SelectDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="edu">Education</SelectLabel><br/>
+                            <SelectA id="edu">
+                                <option selected disabled>Select</option>
+                                <option>Freshman</option>
+                                <option>Sophmore</option>
+                                <option>Junior</option>
+                                <option>Senior</option>
+                                <option>Graduate</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="col">College/University</SelectLabel><br/>
+                            <SelectA id="col">
+                                <option selected disabled>Select</option>
+                                <option>Rochester Institute of Technology</option>
+                                <option>University of Rochester</option>
+                                <option>Nazareth College</option>
+                                <option>St. John Fisher</option>
+                                <option>SUNY Geneseo</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                        <SelectOptionDiv>
+                            <SelectLabel for="gpa">GPA</SelectLabel><br/>
+                            <SelectA id="gpa">
+                                <option selected disabled>Select</option>
+                                <option>Below 2.75</option>
+                                <option>Above 2.75</option>
+                                <option>Other</option>
+                            </SelectA>
+                        </SelectOptionDiv>
+                    </SelectDiv>
+                    <CommentDiv>
+                        <FormLabel>Additional Comments</FormLabel><br/>
+                        <TextArea id="comment" maxLength="200"></TextArea><br/>
+                    </CommentDiv>
+                    <SubmitDiv>
+                        <SubmitInput type="button"  value="Submit" />
+                    </SubmitDiv>
+                </FormStyle>
+            </FormDiv>
             </BottomDiv>
         </JoinDiv>
     );

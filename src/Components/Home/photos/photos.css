@@ -19,6 +19,18 @@
     transform: translateX(63%);
     scale: 0.80;
     border: 4px solid #FFFFFF;
+    
+}
+
+@media (max-width: 1500px) {
+    .nextImg {
+        
+        transform: translateX(-25%);
+    }
+    .prevImg {
+        
+        transform: translateX(25%);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -39,7 +51,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .nextImg {
         display: none;
     }

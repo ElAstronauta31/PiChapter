@@ -18,8 +18,8 @@ const ContactUs = () => {
             </ContactInfo>
             <ContactLinks>
                 <ContactUsUl>
-                    <ContactLi><a href='https://www.facebook.com/pirocphiotas' target="_blank"><ContactImg src={FB}></ContactImg></a></ContactLi>
-                    <ContactLi><a href='https://www.instagram.com/rochesterphiotas/' target="_blank"><ContactImg src={IG}></ContactImg></a></ContactLi>
+                    <ContactLi><a href='https://www.facebook.com/pirocphiotas' target="_blank" rel="noreferrer noopener"><ContactImg src={FB}></ContactImg></a></ContactLi>
+                    <ContactLi><a href='https://www.instagram.com/rochesterphiotas/' target="_blank" rel="noreferrer noopener"><ContactImg src={IG}></ContactImg></a></ContactLi>
                 </ContactUsUl>
             </ContactLinks>
         </ContactUsDiv>

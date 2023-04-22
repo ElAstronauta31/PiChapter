@@ -174,7 +174,7 @@ const brothersSlice = createSlice({
             },
             {
                 brotherNumber: 22,
-                firstName: "Johnathan",
+                firstName: "Johnnathan",
                 lastName: "Martinez",
                 brotherName: "Chiche",
                 lineName: "",
